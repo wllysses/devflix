@@ -1,6 +1,5 @@
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Carousel from 'better-react-carousel'
-import { GlobalContext } from '../../contexts/Global'
 import { Card } from '../Card'
 import './styles.scss'
 import { api } from '../../services/api'

@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "firstName": "Murico",
+      "lastName": "Silva",
+      "email": "murico@teste.com",
+      "password": "murico50",
+      "confirmPassword": "murico50",
+      "id": 1
+    }
+  ]
+}

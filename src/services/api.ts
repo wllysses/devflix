@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { IInputs } from '../components/FormRegistration'
 
 const apiKey = '1dd7bab575c195bc4984778143c79c06'
 
@@ -25,3 +26,26 @@ export const api3 = axios.create({
         language: 'pt-BR'
     }
 })
+
+export const listUsers = async () => {
+    const response = await fetch('http://localhost:3000/users')
+    const data = await response.json()
+
+    return await data
+}
+
+export const registerUser = async ({firstName, lastName, email, password, confirmPassword}: IInputs) => {
+    await fetch('http://localhost:3000/users', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            password: password,
+            confirmPassword: confirmPassword
+        })
+    })
+}

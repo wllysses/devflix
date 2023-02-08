@@ -23,8 +23,6 @@ export const Resume = () => {
             setDetails(detail.data)
         } 
         getDetails()
-
-        console.log(details)
     }, [])
 
     return (

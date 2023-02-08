@@ -39,12 +39,12 @@
                     border: 1px solid rgba(0, 0, 0, 0.527);
                     border-radius: 0.25rem;
                 }
-            }
 
-            .checked-group {
-                display: flex;
-                align-items: center;
-                gap: 0.3rem;
+                .alert-message {
+                    color: red;
+                    font-style: italic;
+                    font-size: 0.75rem;
+                }
             }
 
             button {
