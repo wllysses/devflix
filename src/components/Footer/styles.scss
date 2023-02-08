@@ -1,0 +1,16 @@
+.footer-wrapper {
+    padding: 2rem;
+
+    footer {
+        display: flex;
+        justify-content: center;
+
+        p {
+            color: var(--white);
+
+            span {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
